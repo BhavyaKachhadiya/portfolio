@@ -3,6 +3,9 @@ var t2 = gsap.timeline()
 var t3 = gsap.timeline()
 var t4 = gsap.timeline()
 var t5 = gsap.timeline()
+var t6 = gsap.timeline()
+var t7 = gsap.timeline()
+// gsap.registerPlugin(ScrollTrigger);
 t1.from("#logo ",{
     transform:"translateY(-130%)",
     duration:1,
@@ -65,12 +68,13 @@ t1.from("#sd",{
 t4.from("#about-h",{
     transform:"translateY(-150px)",
     opacity:0,
+    duration:1,
     scrollTrigger:{
-        triggier:"#about-h",
+        trigger:"#about-h",
         scroller:"body",
         scrub:5,
-        start:"top 0",
-        end:"top -100%",
+        // start:"top 0",
+        // end:"top 100%",
         // markers:true,
     }
 })
@@ -79,11 +83,11 @@ t4.from("#hero-subheading-a",{
     transform:"translateY(-100%)",
     opacity:0,
     scrollTrigger:{
-        triggier:"#hero-subheading-a",
+        trigger:"#hero-subheading-a",
         scroller:"body",
         scrub:5,
-        start:"top 0",
-        end:"top -100%",
+        // start:"top 0",
+        // end:"top -100%",
         // markers:true,
     }
 })
@@ -92,35 +96,130 @@ t4.from("#person-a",{
     duration:4,
     opacity:0,
     scrollTrigger:{
-        triggier:"#person-a",
+        trigger:"#person-a",
         scroller:"body",
         scrub:5,
-        start:"top 0",
-        end:"top -100%",
+        // start:"top 0",
+        // end:"top -100%",
     }
 });
 
 t5.from("#my-skill",{
-    transform:"translateY(-140px)",
+    transform:"translateY(-100px)",
     duration:3,
     opacity:0,
     scrollTrigger:{
-        triggier:"#my-skill",
+        trigger:"#my-skill",
         scroller:"body",
         scrub:5,
-        start:"top 0",
-        end:"top -200%",
+        // start:"top 0",
+        // end:"top -200%",
     }
 });
 t5.from(".my-skill",{
-    transform:"translateX(-20px) ",
+    transform:"translateY(-100px)",
+    duration:6,
+    opacity:0,
+    stagger:2,
+    scrollTrigger:{
+        trigger:".my-skill",
+        scroller:"body",
+        scrub:5,
+        // start:"top 0",
+        // end:"top -200%",
+    }
+});
+
+
+t6.from("#heading-service",{
+    transform:"translateY(-50px)",
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#heading-service",
+        scroller:"body",
+        scrub:5,
+        // start:"top 0",
+        // end:"top -100%",
+        // markers:true,
+    }
+})
+
+t6.from(".subheading-service",{
+    transform:"translateY(-100%)",
+    opacity:0,
+    scrollTrigger:{
+        trigger:".subheading-service",
+        scroller:"body",
+        scrub:5,
+        // start:"top 0",
+        // end:"top -100%",
+        // markers:true,
+    }
+})
+
+t6.from(".service",{
+    transform:"translateY(-30px)",
+    duration:1,
+    opacity:0,
+    stagger:.2,
+    scrollTrigger:{
+        trigger:".service",
+        scroller:"body",
+        scrub:3,
+        // start:"top 0",
+        // end:"top -100%",
+        // markers:true,
+    }
+})
+
+
+
+t7.from(".resume-sub",{
+    transform:"translateY(-50px) ",
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".resume-sub",
+        scroller:"body",
+        // start:"top 0",
+        // end:"top -100%",
+        scrub:5
+    }
+});
+t7.from("#heading-resume",{
+    transform:"translateY(-50px) ",
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#heading-resume",
+        scroller:"body",
+        // start:"top 0",
+        // end:"top -100%",
+        scrub:5
+    }
+});
+t7.from(".container-edu",{
+    transform:"translateY(-50px) ",
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".container-edu",
+        scroller:"body",
+        scrub:5
+        // start:"top 0",
+        // end:"top -100%",
+    }
+});
+t7.from(".container-exper",{
+    transform:"translateY(-50px) ",
     duration:1,
     opacity:0,
     stagger:1,
     scrollTrigger:{
-        triggier:".my-skill",
+        trigger:".container-exper",
         scroller:"body",
-        start:"top 0",
-        end:"top -100%",
+        scrub:5
+        // start:"top 0",
+        // end:"top -100%",
     }
 });
