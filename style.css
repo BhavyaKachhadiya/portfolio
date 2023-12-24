@@ -93,12 +93,14 @@ a {
     font-size: 2.2vw;
     color: var(--primary);
 }
+
 #heading-service {
     padding-top: 4vw;
     font-size: 2.2vw;
     text-align: center;
     color: var(--primary);
 }
+
 #heading-resume {
     padding-top: 4vw;
     font-size: 2.2vw;
@@ -106,7 +108,7 @@ a {
     color: var(--primary);
 }
 
-#hello{
+#hello {
     font-size: 1.3vw;
 }
 
@@ -121,6 +123,7 @@ a {
     font-weight: 400;
     width: 500px;
 }
+
 #subheading-s {
     font-size: 1.4vw;
     font-weight: 400;
@@ -156,10 +159,12 @@ a {
     background-color: var(--bg-color);
     height: 110vh;
 }
+
 .page4 {
     background-color: var(--papaya-whip);
     height: 100vh;
 }
+
 .page5 {
     background-color: rgb(248, 249, 254);
     height: 100vh;
@@ -173,6 +178,14 @@ a {
     list-style: none;
     margin: 50px 30px 0px 0px;
     font-size: 2.5vw;
+}
+
+.fa-brands {
+    transition: transform .3s ease;
+}
+
+.fa-brands:hover {
+    transform: scale(1.4);
 }
 
 #fb:hover {
@@ -199,6 +212,28 @@ a {
     transform: rotate(90deg);
 }
 
+#sd-a {
+    text-decoration: none;
+    color: var(--second);
+}
+
+#go-up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#go-up > i{
+    color: var(--papaya-whip);
+    font-size: 25px;
+}
 
 #my-skill {
     font-size: 30px;
@@ -226,9 +261,12 @@ a {
     color: white;
     border-radius: 50px;
 }
-.skill-name,.skill-no{
+
+.skill-name,
+.skill-no {
     font-size: 1.1vw;
 }
+
 .html {
     width: 60%;
     background-color: rgb(229, 83, 45);
@@ -314,70 +352,80 @@ a {
     justify-content: center;
 }
 
-.service-logo{
+.service-logo {
     font-size: 3vw;
 }
 
-.services{
+.services {
     display: grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 0px 100px;
     margin: 5vw 2vw;
 }
 
-.service{
+.service {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid;
+    border: 2px solid red;
     border-radius: 25px;
-    padding: 60px 24px; 
+    padding: 60px 24px;
     gap: 20px;
     transition: box-shadow .2s ease-out, scale .2s ease-out;
 }
-.service-name{
+
+.service-name {
     font-size: 1.2vw;
     font-weight: 500;
 }
+
 .service:hover {
     box-shadow: 1px 1px 10px red;
     scale: 1.05;
 }
-.service:hover  .service-name{
-  color: var(--primary);
+
+.service:hover .service-name {
+    color: var(--primary);
 }
-.service:hover  .logo-service{
-  color: var(--primary);
+
+.service:hover .logo-service {
+    color: var(--primary);
 }
-.service:hover  .service-dets{
-  color: var(--primary);
+
+.service:hover .service-dets {
+    color: var(--primary);
 }
-.service-dets{
+
+.service-dets {
     font-size: 1.2vw;
     font-weight: 400;
 }
-.year{
+
+.year {
     font-weight: 500;
     font-size: 1vw;
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 1.4vw;
 }
-.at{
+
+.at {
     font-weight: 600;
     font-size: 1vw;
 }
 
-#container2{
+#container2 {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     place-items: center;
 }
 
-.container-edu,.container-exper{
-    background-color: #edf1fd  ;
+.container-edu,
+.container-exper {
+    background-color: #edf1fd;
     padding: 10px 30px;
     display: flex;
     flex-direction: column;
@@ -385,26 +433,30 @@ a {
     width: 35vw;
     transition: box-shadow 0.5s ease;
 }
-.container-warp-resume{
+
+.container-warp-resume {
     display: flex;
     gap: 30px;
     flex-direction: column;
 }
-.container-edu:hover,.container-exper:hover{
-    box-shadow:1px 5px 18px black
+
+.container-edu:hover,
+.container-exper:hover {
+    box-shadow: 1px 5px 18px black
 }
 
-.resume-sub{
+.resume-sub {
     text-align: center;
     margin: 30px 0px;
     font-size: 2.5vw;
 }
 
-.footer{
+.footer {
     text-align: center;
     background-color: var(--bg-color);
     font-size: 1vw;
 }
-.footer>p{
-   padding: 19px 0px;
+
+.footer>p {
+    padding: 19px 0px;
 }

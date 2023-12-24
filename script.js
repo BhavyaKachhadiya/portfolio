@@ -1,3 +1,20 @@
+let mybutton = document.getElementById("go-up");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 var t1 = gsap.timeline()
 var t2 = gsap.timeline()
 var t3 = gsap.timeline()
@@ -5,7 +22,6 @@ var t4 = gsap.timeline()
 var t5 = gsap.timeline()
 var t6 = gsap.timeline()
 var t7 = gsap.timeline()
-// gsap.registerPlugin(ScrollTrigger);
 t1.from("#logo ",{
     transform:"translateY(-130%)",
     duration:1,
