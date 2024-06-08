@@ -140,7 +140,7 @@ a {
     color: var(--primary);
 }
 
-#full-stack {
+#stack {
     color: var(--prim-sec);
     font-weight: 600;
 }
@@ -157,12 +157,13 @@ a {
 
 .page3 {
     background-color: var(--bg-color);
-    height: 110vh;
+    height: 100%;
+    padding-bottom:5vw ;
 }
 
 .page4 {
     background-color: var(--papaya-whip);
-    height: 100vh;
+    height: 100%;
 }
 
 .page5 {
@@ -359,8 +360,8 @@ a {
 .services {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 0px 100px;
-    margin: 5vw 2vw;
+    gap: 20px 100px;
+    padding: 5vw 2vw;
 }
 
 .service {
@@ -421,6 +422,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     place-items: center;
+    align-items: start;
 }
 
 .container-edu,
