@@ -9,6 +9,8 @@ import { Skill } from "./controller/Skill.controllor.js";
 const socialLinks = [
   new SocialLink("fb", "https://www.facebook.com/", "fa-brands fa-facebook"),
   new SocialLink("ld", "https://www.linkedin.com/", "fa-brands fa-linkedin"),
+  new SocialLink("x", "https://www.x.com/", "fa-brands fa-x-twitter"),
+  new SocialLink("yt", "https://www.youtube.com/", "fa-brands fa-youtube"),
 ];
 // Create a HomePage instance
 const homePage = new HomePage(

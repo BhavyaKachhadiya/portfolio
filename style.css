@@ -45,6 +45,7 @@ header {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .nav-item {
@@ -198,7 +199,7 @@ a {
 }
 
 #x:hover {
-    color: #249ef0;
+    color: #000;
 }
 
 #yt:hover {
