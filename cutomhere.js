@@ -61,6 +61,19 @@ for (const education of educationElements) {
   const educationElement = education.createEducationElement();
   educationContainer.appendChild(educationElement);
 }
+const skills = [
+  new Skill("HTML", 30, "#f44"), // Example with color class
+  new Skill("CSS", 75, "#34f"),
+  new Skill("JavaScript", 80, "#fd1")
+  // ... add more skills
+];
+
+const skillContainer = document.querySelector(".allskills"); // Adjust selector as needed
+
+for (const skill of skills) {
+  const skillElement = skill.createSkillElement();
+  skillContainer.appendChild(skillElement);
+}
 
 const experience1 = new Experience(
   "Dec 2023 - Present",
@@ -80,16 +93,4 @@ for (const experience of experienceElements) {
   experienceContainer.appendChild(experienceElement);
 }
 
-const skills = [
-  new Skill("HTML", 30, "#f44"), // Example with color class
-  new Skill("CSS", 75, "#34f"),
-  new Skill("JavaScript", 80, "#fd1")
-  // ... add more skills
-];
 
-const skillContainer = document.querySelector(".allskills"); // Adjust selector as needed
-
-for (const skill of skills) {
-  const skillElement = skill.createSkillElement();
-  skillContainer.appendChild(skillElement);
-}
