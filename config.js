@@ -27,10 +27,6 @@ const aboutPage = new AboutPage(
   "I am a Full Stack Web Developer, I love to make websites"
 );
 
-// Call displayInfo for HomePage and AboutPage
-homePage.displayInfo();
-aboutPage.displayInfo();
-
 // Skills
 const skills = [
   new Skill("HTML", 70, "#f44"),
@@ -43,11 +39,7 @@ const skills = [
   new Skill("NodeJS", 50, "green"),
   // ... more skills
 ];
-const skillContainer = document.querySelector(".allskills");
-for (const skill of skills) {
-  const skillElement = skill.createSkillElement();
-  skillContainer.appendChild(skillElement);
-}
+
 
 // Services
 const services = [
@@ -67,23 +59,13 @@ const services = [
     "I will do automation using Python"
   ),
 ];
-const serviceContainer = document.querySelector(".services");
-for (const service of services) {
-  const serviceElement = service.createServiceElement();
-  serviceContainer.appendChild(serviceElement);
-}
+
 // Education
 const education1 = new Education(
   "Aug 2022 - Present",
   "Diploma in Computer Engineering",
   "Dr Subhash University"
 );
-const educationContainer = document.querySelector("#ed");
-const educationElements = [education1 /* ... more education instances */];
-for (const education of educationElements) {
-  const educationElement = education.createEducationElement();
-  educationContainer.appendChild(educationElement);
-}
 
 // Experience
 const experience1 = new Experience(
@@ -92,6 +74,35 @@ const experience1 = new Experience(
   "Hopiant Pvt. Ltd."
 );
 
+// Ingnore this
+
+// Call displayInfo for HomePage and AboutPage
+homePage.displayInfo();
+aboutPage.displayInfo();
+
+// Skill
+const skillContainer = document.querySelector(".allskills");
+for (const skill of skills) {
+  const skillElement = skill.createSkillElement();
+  skillContainer.appendChild(skillElement);
+}
+
+// Service
+const serviceContainer = document.querySelector(".services");
+for (const service of services) {
+  const serviceElement = service.createServiceElement();
+  serviceContainer.appendChild(serviceElement);
+}
+
+// Education
+const educationContainer = document.querySelector("#ed");
+const educationElements = [education1 /* ... more education instances */];
+for (const education of educationElements) {
+  const educationElement = education.createEducationElement();
+  educationContainer.appendChild(educationElement);
+}
+
+// Experience
 const experienceContainer = document.querySelector("#ex");
 const experienceElements = [experience1 /* ... more experience instances */];
 for (const experience of experienceElements) {
