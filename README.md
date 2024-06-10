@@ -44,7 +44,7 @@ Now it's time to personalize the website!
 3. **Save Changes:**
    Save your changes to `config.js`.
 
-> For more information open CONFIG.md
+> For more information open [CONFIG.md](https://github.com/BhavyaKachhadiya/portfolio/blob/main/CONFIG.md)
 ### Running the Website
 
 1. **Open `index.html`:**
