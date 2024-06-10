@@ -1,30 +1,55 @@
-import { HomePage, SocialLink } from "./controller/Home.controller.js"; // Assuming homePage.js is in the same directory
-import { AboutPage } from "./controller/About.controller.js";
-import { Service } from "./controller/Service.controller.js";
-import { Education } from "./controller/Education.controllor.js";
-import { Experience } from "./controller/Experience.controller.js";
-import { Skill } from "./controller/Skill.controllor.js";
+import {
+  AboutPage,
+  Education,
+  Experience,
+  HomePage,
+  Service,
+  Skill,
+  SocialLink,
+} from "./controller/Controller.js";
 
-// Create social link objects (replace with your URLs and icon classes)
+// Create social link objects
 const socialLinks = [
   new SocialLink("fb", "https://www.facebook.com/", "fa-brands fa-facebook"),
   new SocialLink("ld", "https://www.linkedin.com/", "fa-brands fa-linkedin"),
   new SocialLink("x", "https://www.x.com/", "fa-brands fa-x-twitter"),
   new SocialLink("yt", "https://www.youtube.com/", "fa-brands fa-youtube"),
 ];
-// Create a HomePage instance
+
+// Create instances for all sections
 const homePage = new HomePage(
-  "Bhavya ",
+  "Bhavya",
   "Full Stack Website",
   socialLinks,
   "person.jpg"
 );
-// Call the displayInfo method to display information
+const aboutPage = new AboutPage(
+  "I am a Full Stack Web Developer, I love to make websites"
+);
+
+// Call displayInfo for HomePage and AboutPage
 homePage.displayInfo();
+aboutPage.displayInfo();
 
-const About = new AboutPage("fjdfogj");
-About.displayInfo();
+// Skills
+const skills = [
+  new Skill("HTML", 70, "#f44"),
+  new Skill("CSS", 60, "#34f"),
+  new Skill("JavaScript", 40, "black"),
+  new Skill("React", 30, "blue"),
+  new Skill("NextJS", 20, "black"),
+  new Skill("MongoDB", 40, "Green"),
+  new Skill("Express", 50, "black"),
+  new Skill("NodeJS", 50, "green"),
+  // ... more skills
+];
+const skillContainer = document.querySelector(".allskills");
+for (const skill of skills) {
+  const skillElement = skill.createSkillElement();
+  skillContainer.appendChild(skillElement);
+}
 
+// Services
 const services = [
   new Service(
     "fa-solid fa-pager logo-service",
@@ -42,57 +67,34 @@ const services = [
     "I will do automation using Python"
   ),
 ];
-
-const serviceContainer = document.querySelector(".services"); // Assuming the services container has this class
+const serviceContainer = document.querySelector(".services");
 for (const service of services) {
-  const serviceElement = service.createServiceElement(); // Call the method to create the element
+  const serviceElement = service.createServiceElement();
   serviceContainer.appendChild(serviceElement);
 }
-
+// Education
 const education1 = new Education(
   "Aug 2022 - Present",
   "Diploma in Computer Engineering",
   "Dr Subhash University"
 );
-
 const educationContainer = document.querySelector("#ed");
-
 const educationElements = [education1 /* ... more education instances */];
-
 for (const education of educationElements) {
   const educationElement = education.createEducationElement();
   educationContainer.appendChild(educationElement);
 }
-const skills = [
-  new Skill("HTML", 30, "#f44"), // Example with color class
-  new Skill("CSS", 75, "#34f"),
-  new Skill("JavaScript", 80, "#fd1")
-  // ... add more skills
-];
 
-const skillContainer = document.querySelector(".allskills"); // Adjust selector as needed
-
-for (const skill of skills) {
-  const skillElement = skill.createSkillElement();
-  skillContainer.appendChild(skillElement);
-}
-
+// Experience
 const experience1 = new Experience(
   "Dec 2023 - Present",
   "Internship",
   "Hopiant Pvt. Ltd."
 );
 
-
-// ... add more experience instances
-
 const experienceContainer = document.querySelector("#ex");
-
-const experienceElements = [experience1 /* ... more experience instances */, ,];
-
+const experienceElements = [experience1 /* ... more experience instances */];
 for (const experience of experienceElements) {
   const experienceElement = experience.createExperienceElement();
   experienceContainer.appendChild(experienceElement);
 }
-
-

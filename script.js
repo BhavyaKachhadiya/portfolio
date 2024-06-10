@@ -54,7 +54,7 @@ t2.from("#hero-subheading",{
     duration:.3,
     opacity:0,
 });
-t2.from("#full-stack",{
+t2.from("#stack",{
     transform:"translateY(-120%)",
     duration:2,
     opacity:0,
@@ -67,7 +67,7 @@ t2.from("#person",{
 });
 
 
-t2.from(".social-item",{
+t2.from("#links",{
     transform:"translateY(-40%)",
     duration:3,
     opacity:0,
@@ -132,13 +132,13 @@ t5.from("#my-skill",{
         // end:"top -200%",
     }
 });
-t5.from(".my-skill",{
+t5.from(".allskills",{
     transform:"translateY(-100px)",
     duration:6,
     opacity:0,
     stagger:2,
     scrollTrigger:{
-        trigger:".my-skill",
+        trigger:".allskills",
         scroller:"body",
         scrub:5,
         // start:"top 0",
@@ -173,13 +173,13 @@ t6.from(".subheading-service",{
     }
 })
 
-t6.from(".service",{
+t6.from("#service-card",{
     transform:"translateY(-30px)",
     duration:1,
     opacity:0,
     stagger:.2,
     scrollTrigger:{
-        trigger:".service",
+        trigger:"#service-card",
         scroller:"body",
         scrub:3,
         // start:"top 0",
@@ -214,25 +214,25 @@ t7.from("#heading-resume",{
         scrub:5
     }
 });
-t7.from(".container-edu",{
+t7.from("#ed",{
     transform:"translateY(-50px) ",
     duration:1,
     opacity:0,
     scrollTrigger:{
-        trigger:".container-edu",
+        trigger:"#ed",
         scroller:"body",
         scrub:5
         // start:"top 0",
         // end:"top -100%",
     }
 });
-t7.from(".container-exper",{
+t7.from("#ex",{
     transform:"translateY(-50px) ",
     duration:1,
     opacity:0,
     stagger:1,
     scrollTrigger:{
-        trigger:".container-exper",
+        trigger:"#ex",
         scroller:"body",
         scrub:5
         // start:"top 0",
